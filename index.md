@@ -5,9 +5,9 @@
 but yesterday I have seen you 
 in my dreams 
 [Link](https://www.youtube.com/watch?v=btmjDyff6E8)
-> like sea, you always remind me of blueful happy memories 
+> like sea, you always remind me of blueful happy memories :)
 
-![Image](http://url/a.png)
+![Image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbGkDquvJEmAMYaGPwkrnHV65xq-OG50IwsQ&usqp=CAU)
 
 `don't be afraid to fall into dreams` because we will always think of each other
 
@@ -16,7 +16,7 @@ in my dreams
 print 'while(!userinput.equals"quit")'
 print 'I always miss you'
 ```
-I will see u, in our dreams:):
+I will see u, in our dreams <3:
 
 ---
 * List
