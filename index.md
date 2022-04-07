@@ -33,4 +33,6 @@ I will see u, in our dreams <3. Or:
 
 *our emotions will be present in anywhere, anytime.*
 
+[Lab Report 1](lab-report-1-week-2.html)
+
 [Lab Report 1](https://Angelsofttoy.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
