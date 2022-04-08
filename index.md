@@ -17,7 +17,7 @@ in my dreams
 
 ```
 # code block
-print 'while(!userinput.equals"quit")'
+print 'while(!userinput.equals("quit"))'
 print 'I always miss you'
 ```
 I will see u, in our dreams <3. Or:
