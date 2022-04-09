@@ -19,3 +19,5 @@ Most importantly, it has an easy-to-operate, easy-to-understand terminal, which 
 _**But first, we need to install it!**_
 
 Let's go to Visual Studio Code's Official Link for [downloading the software](https://code.visualstudio.com/), and finish the installing process. 
+
+Depnding on your computer's operating system(Linux/Window/Mac), you should download corresponding Visual Studio Code version onto your computer. 
