@@ -12,6 +12,8 @@ You might be worried that it's a bit complicated, but no worries! This blog post
 
 ## 1. Installing Visual Studio Code
 
-*Visual Studio Code* is a really great coding program that are capable of supporting various coding languages from java to C++, etc. 
+*Visual Studio Code* is a really great coding program that is capable of supporting various coding languages from Java to C++, etc. 
 
-Most importantly, it has an easy-to-operate, easy-to-understand terminal, which is crucial 
+Most importantly, it has an easy-to-operate, easy-to-understand terminal, which will be our main resort in logging into a remote computer. 
+
+_**But first, we need to install it!**_
