@@ -17,3 +17,5 @@ You might be worried that it's a bit complicated, but no worries! This blog post
 Most importantly, it has an easy-to-operate, easy-to-understand terminal, which will be our main resort in logging into a remote computer. 
 
 _**But first, we need to install it!**_
+
+Let's go to Visual Studio Code's Official Link for [downloading the software](https://code.visualstudio.com/), and finish the installing process. 
