@@ -1,5 +1,6 @@
-# A Tutorial for Logging into a Remote Computer(ieng6)!
-Hi!! Future CSE15L students! (including future myself who may forget some of the course content) 
+# _**A Tutorial for Logging into a Remote Computer(ieng6)!**_
+
+Hii!! Future CSE15L students! (including future myself who may forget some of the course content) 
 
 This blog post is made for *you* ! To get to know how to:
 
@@ -9,3 +10,8 @@ This blog post is made for *you* ! To get to know how to:
 
 You might be worried that it's a bit complicated, but no worries! This blog post is herr to guide you through it :) ! We will make it _**together**_ !
 
+## 1. Installing Visual Studio Code
+
+*Visual Studio Code* is a really great coding program that are capable of supporting various coding languages from java to C++, etc. 
+
+Most importantly, it has an easy-to-operate, easy-to-understand terminal, which is crucial 
