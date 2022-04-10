@@ -54,9 +54,38 @@ Congrats! This means you have successfully logged onto a remote computer at the 
 
 ## 3. Trying Some Commands
 
-Having logged onto the computer, now we could try all different kinds of commands that could help us to access, modify, and even move files from our own computer to the CSE Lab computer! 
+Having logged onto the computer, now we could try all different kinds of commands that could help us to access, modify, and even move files from our own computer to the CSE Lab computer!
+
+1. If you want to access datas in a specfic directory:
+
+* $ cd for changing to a new directory(but for now we are just going to 
+stick with this current directory).
+
+* $ pwd for showing the directory you currently are in. 
+
+* $ ls for listing all file datas' names in the current directory. 
+
+* $ cat *filename*.java for accessing content within a specifc file
+
 
 ![Image](fileName.jpg)
 
-If you
+2. If you want to create a new folder, just type:
+
+* $ mkdir **_your folder name_**
+
+    *Then enter:*
+
+* ls (*meaning: list*)
+
+    And you should be able to see the new folder created in the computer:
+
 ![Image](newFolder.jpg)
+
+If you wish to try more command on your own, here's an useful website 
+
+## 4. Move Files with SCP
+
+Great! Now we have got to know some of the basic ssh-based commands that could remotely interlink them with files on a lab computer, we could turn toward a even cooler thing -- **_transfering files from our computer to the lab computer_** ! 
+
+It's simple, we just need to type some commands on the terminal *again* !
