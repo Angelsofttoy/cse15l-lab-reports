@@ -51,3 +51,12 @@ Then you should able to see this ! :
 ![Image](remotelyConnect.jpg)
 
 Congrats! This means you have successfully logged onto a remote computer at the lab! Isn't this exciting *:D* ?
+
+## 3. Trying Some Commands
+
+Having logged onto the computer, now we could try all different kinds of commands that could help us to access, modify, and even move files from our own computer to the CSE Lab computer! 
+
+![Image](fileName.jpg)
+
+If you
+![Image](newFolder.jpg)
