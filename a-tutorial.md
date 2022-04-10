@@ -92,6 +92,13 @@ It's simple, we just need to type some commands on the terminal *again* !
 
 ## 5. Setting a SSH key
 
+Setting a SSH key could save us from repeatedly entering a password to log into the remote computer. Instead, we could simply enter(the intalized/bolded part is your own username):
+
+* $ ssh cs15lsp22**_zz_**@ieng6.ucsd.edu
+
+And we could actually log into the remote computer without entering any password! Below I will show how we could get this set up. 
+
+1. 
 
 ## 6. Optimizing Remote Running
 
@@ -108,3 +115,5 @@ Even after you have saved the trouble of contiously entering password in order t
     * then, use the *up arrow* key on your keyboard, so some of your frequent commands could appear as you tapping on the up arrow key. So it could minimize times spent on typing command lines.
 
 Yay! I believe we have reached the end of this little tutorial! It may not be much, but I hope it could be of some help to you!
+
+**_Congrats :) !_**
