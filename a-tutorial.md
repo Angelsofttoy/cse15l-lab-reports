@@ -24,7 +24,7 @@ Depnding on your computer's operating system(Linux/Window/Mac), you should downl
 
 After you are finished with downloading it and setting up, its homepage should look something like this:
 
-![Image](./VScode.jpg)
+![Image](VScode.jpg)
 
 Congrats! You have finished the first step! *_*coffetti*_* ! Where are my *_*coffettis*_*! 
 
@@ -45,3 +45,9 @@ After pressing return, as it's your first time of logging into this remote compu
 After seeing this appeared in the terminal, do not panic! Just type yes and press return. Then you should be able to see it's prompting you to enter the password too. 
 
 Enter your account password, **also**, do not **_panic_** if you can't see the password you entered in the terminal. Your input is being recorded, it's just won't show visually. Press return after you finished entering the password. 
+
+Then you should able to see this ! :
+
+![Image](remotelyConnect.jpg)
+
+Congrats! This means you have successfully logged onto a remote computer at the lab! Isn't this exciting *:D* ?
