@@ -89,3 +89,16 @@ If you wish to try more command on your own, here's an useful website
 Great! Now we have got to know some of the basic ssh-based commands that could remotely interlink them with files on a lab computer, we could turn toward a even cooler thing -- **_transfering files from our computer to the lab computer_** ! 
 
 It's simple, we just need to type some commands on the terminal *again* !
+
+## 5. Setting a SSH key
+
+
+## 6. Optimizing Remote Running
+
+Even after you have saved the trouble of contiously entering password in order to log in, sometimes it just takes way too long to enter all sorts of commands too. *LUCKILY*, there are some short cuts for it! ;)
+
+* pre-type some of commands that you will be using frequently in the terminal 
+
+    * then, use the *up arrow* key on your keyboard, so some of your frequent commands could appear as you tapping on the up arrow key. So it could minimize times spent on typing command lines.
+
+Yay! I believe we have reached the end of this little tutorial! It may not be much, but I hope it could be of some help to you!
