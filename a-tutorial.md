@@ -97,7 +97,13 @@ It's simple, we just need to type some commands on the terminal *again* !
 
 Even after you have saved the trouble of contiously entering password in order to log in, sometimes it just takes way too long to enter all sorts of commands too. *LUCKILY*, there are some short cuts for it! ;)
 
-* pre-type some of commands that you will be using frequently in the terminal 
+* type multiple commands on the same line:
+
+    * e.g. *ssh cs15lsp22amz@ieng6.ucsd.edu* + *cat WhereAmI.java* are inputed into the same line. And it directly shows the file content.
+
+    ![Image](multiCommand.jpg)
+
+* pre-type some of commands that you will be using frequently in the terminal:
 
     * then, use the *up arrow* key on your keyboard, so some of your frequent commands could appear as you tapping on the up arrow key. So it could minimize times spent on typing command lines.
 
