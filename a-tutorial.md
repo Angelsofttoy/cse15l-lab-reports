@@ -29,4 +29,11 @@ After you are finished with downloading it and setting up, its homepage should l
 Congrats! You have finished the first step! *_*coffetti*_* ! Where are my *_*coffettis*_*! 
 
 ## 2. Connect to Your own Remote Computer
-Before we put any cool commands in Visual Studio code's terminal, you need to first know your CSE15L account, click on [UCSD's educaitional technology service website](https://sdacs.ucsd.edu/~icc/index.php)
+
+Before we put any cool commands in Visual Studio code's terminal, you need to first know your CSE15L account, click on [UCSD's educaitional technology service website](https://sdacs.ucsd.edu/~icc/index.php), so you could do some account look up:).
+
+Once you know what is your account name specifically, we could now begin the remotely connecting process! Yay!!
+
+**_Firstly_**, let's open the terminal on your visual studio code by click on Terminal --> New Terminal on the menu tab. 
+
+Then, afterh the $ sign in terminal, you need to input your CSE15L account name, which should be the below format:
