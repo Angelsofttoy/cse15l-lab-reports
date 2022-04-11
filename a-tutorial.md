@@ -98,7 +98,23 @@ Setting a SSH key could save us from repeatedly entering a password to log into 
 
 And we could actually log into the remote computer without entering any password! Below I will show how we could get this set up. 
 
-1. 
+This is similar to each time you enter a passowrd on a website through google chrome, it will asks you if you want to save this password. Similarly, through the following steps, will be also helping you to save your password and thus you don't have to enter it:                          
+
+1. enter ssh-keygen command on your terminal
+
+    *  $ ssh-keygen
+
+2. then, the terminal will display some message, and the last one will be:
+
+    * Enter paraphrase (empty for no paraphrase) :
+
+    At this point, you just need to press return and don't need to enter anything. 
+
+3. Then you should be able to see it shows some similar messages in your terminal:
+
+* ![Image](signs.jpg)
+
+
 
 ## 6. Optimizing Remote Running
 
