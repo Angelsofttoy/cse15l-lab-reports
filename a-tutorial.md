@@ -38,10 +38,14 @@ Once you know what is your account name specifically, we could now begin the rem
 
 Then, afterh the $ sign in terminal, you need to input your CSE15L account name, which should be the below format(the bolded part should be your account specfic name):
 
-* $ cs15lsp22 **_zz_** @ieng6.ucsd.edu
+```
+$ cs15lsp22<username>@ieng6.ucsd.edu
+```
+After pressing return, as it's your first time of logging into this remote computer, you will probably get a warning message, that asks you something like:
 
-After pressing return, as it's your first time of logging into this remote computer, you will probably get a warning message, that asks you something like, *whether you are sure of connecting to this computer? (yes/no/[fingerprint])*
-
+```
+*are you sure of connecting to this computer? (yes/no/[fingerprint])*
+```
 After seeing this appeared in the terminal, do not panic! Just type yes and press return. Then you should be able to see it's prompting you to enter the password too. 
 
 Enter your account password, **also**, do not **_panic_** if you can't see the password you entered in the terminal. Your input is being recorded, it's just won't show visually. Press return after you finished entering the password. 
@@ -83,7 +87,7 @@ stick with this current directory).
 
 ![Image](newFolder.jpg)
 
-If you wish to try more command on your own, here's an useful website 
+If you wish to try more command on your own, here's an useful website: [markdown]
 
 ## 4. Move Files with SCP
 
