@@ -87,7 +87,14 @@ stick with this current directory).
 
 ![Image](newFolder.jpg)
 
-If you wish to try more command on your own, here's an useful website: [markdown]
+If you wish to try more command on your own, here're some more commands!:
+
+* **cp**: copy
+* **mv**: move or rename
+* **rm**: remove
+* **touch**: create a file
+
+If you wish, you could try them on your own! :)
 
 ## 4. Move Files with SCP
 
