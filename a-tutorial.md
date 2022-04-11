@@ -72,9 +72,10 @@ stick with this current directory).
 
 2. If you want to create a new folder, just type:
 
-* $ mkdir **_your folder name_**
-
-    *Then enter:*
+```
+ $ mkdir your_folder_name
+```
+*Then enter:*
 
 * ls (*meaning: list*)
 
@@ -90,6 +91,39 @@ Great! Now we have got to know some of the basic ssh-based commands that could r
 
 It's simple, we just need to type some commands on the terminal *again* !
 
+First, let's create a simple java file on client(our local computer), naming it WhereAmI.java, and write the following code within it:
+
+```
+class WhereAmI {
+    public static void main(String[] args) {
+      System.out.println(System.getProperty("os.name"));
+      System.out.println(System.getProperty("user.name"));
+      System.out.println(System.getProperty("user.home"));
+      System.out.println(System.getProperty("user.dir"));
+    }
+}
+```
+
+Before we do anything using scp to copy the files over, we need to first compile this file on our computer using:
+```
+$ javac WhereAmI.java
+```
+and also run this file:
+```
+$ java WhereAmI
+```
+You should be seeing some message which should look something like this:
+
+![Image](compileOnClient.jpg)
+
+This shows informations about your operating system, your local username, home, and directory as well. 
+
+Now, after finishing initial compiling, we could enter the following code in our terminal:
+
+```
+$ scp WhereAmI.java cs15lsp22<your_username>@ieng6.ucsd.edu:~/
+```
+
 ## 5. Setting a SSH key
 
 Setting a SSH key could save us from repeatedly entering a password to log into the remote computer. Instead, we could simply enter(the intalized/bolded part is your own username):
@@ -98,8 +132,9 @@ Setting a SSH key could save us from repeatedly entering a password to log into 
 
 And we could actually log into the remote computer without entering any password! Below I will show how we could get this set up. 
 
-This is similar to each time you enter a passowrd on a website through google chrome, it will asks you if you want to save this password. Similarly, through the following steps, will be also helping you to save your password and thus you don't have to enter it:                          
-
+This is similar to each time you enter a passowrd on a website through google chrome, it will asks you if you want to save this password. Similarly, through the following steps, will be also helping you to save your password and thus you don't have to enter it:   
+                 
+```
 1. enter ssh-keygen command on your terminal
 
     *  $ ssh-keygen
@@ -112,16 +147,32 @@ This is similar to each time you enter a passowrd on a website through google ch
 
 3. Then you should be able to see it shows some similar messages in your terminal:
 
+Enter same passphrase again: 
+Your identification has been saved in /Users/<user-name>/.ssh/id_rsa.
+Your public key has been saved in /Users/<user-name>/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 <user-name>@<system>.local
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|       . . + .   |
+|      . . B o .  |
+|     . . B * +.. |
+|      o S = *.B. |
+|       = = O.*.*+|
+|        + * *.BE+|
+|           +.+.o |
+|             ..  |
++----[SHA256]-----+
+```
 * ![Image](signs.jpg)
-
-
 
 ## 6. Optimizing Remote Running
 
 Even after you have saved the trouble of contiously entering password in order to log in, sometimes it just takes way too long to enter all sorts of commands too. *LUCKILY*, there are some short cuts for it! ;)
 
 * type multiple commands on the same line:
-
+    
     * e.g. *ssh cs15lsp22amz@ieng6.ucsd.edu* + *cat WhereAmI.java* are inputed into the same line. And it directly shows the file content.
 
     ![Image](multiCommand.jpg)
