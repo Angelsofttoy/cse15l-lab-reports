@@ -179,6 +179,29 @@ The key's randomart image is:
 ```
 * ![Image](signs.jpg)
 
+Now let's log into the ieng6 account using ssh again and finish the last step in copying the password key to your account on the server:
+
+```
+$ ssh cs15lsp22<your_username>@ieng6.ucsd.edu
+
+//and you should be prompted to enter your password again.
+
+$ mkdir. ssh
+
+//enter this command to copy the key onto the server
+
+//then press Ctrl + D to quit from ieng6 account, and enter the following scp command:
+
+$ scp Users/<user-name>/.ssh/id_rsa.pub.cs15lsp22<your_account_name>@ieng6.ucsd.edu:~/authorized_keys
+```
+After doing this, you should be able to just enter:
+```
+$ ssh cs15lsp22<username>@ieng6.ucsd.edu
+```
+and be able to log in just like that!(like this):
+
+![Image](fastLogin.jpg)
+
 ## 6. Optimizing Remote Running
 
 Even after you have saved the trouble of contiously entering password in order to log in, sometimes it just takes way too long to enter all sorts of commands too. *LUCKILY*, there are some shortcuts for it! ;)
