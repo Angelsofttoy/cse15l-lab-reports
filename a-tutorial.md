@@ -123,30 +123,42 @@ Now, after finishing initial compiling, we could enter the following code in our
 ```
 $ scp WhereAmI.java cs15lsp22<your_username>@ieng6.ucsd.edu:~/
 ```
+after this move, you should be prompted to enter your password *again*. And your file should be copied onto the lab computer! Let's log in using ssh again! Type the following command in the terminal:
+```
+$ ssh cs15lsp22<your_username>@ieng6.ucsd.edu ls
+```
+Now you should be able to see your file listed in the remote computer's directory! *Congrats!!*
+
+*(If you have time, you could try to run javac and java on the ieng6 computer, to see how it would be different than running from local computer.)*
 
 ## 5. Setting a SSH key
 
 Setting a SSH key could save us from repeatedly entering a password to log into the remote computer. Instead, we could simply enter(the intalized/bolded part is your own username):
 
-* $ ssh cs15lsp22**_zz_**@ieng6.ucsd.edu
-
+```
+ $ ssh cs15lsp22**_zz_**@ieng6.ucsd.edu
+```
 And we could actually log into the remote computer without entering any password! Below I will show how we could get this set up. 
 
 This is similar to each time you enter a passowrd on a website through google chrome, it will asks you if you want to save this password. Similarly, through the following steps, will be also helping you to save your password and thus you don't have to enter it:   
                  
-```
-1. enter ssh-keygen command on your terminal
 
-    *  $ ssh-keygen
+1. enter ssh-keygen command on your terminal
+```
+    $ ssh-keygen
+```
 
 2. then, the terminal will display some message, and the last one will be:
 
+```
     * Enter paraphrase (empty for no paraphrase) :
 
     At this point, you just need to press return and don't need to enter anything. 
+```
 
-3. Then you should be able to see it shows some similar messages in your terminal:
+3. Then you should be able to see it shows some similar messages in your terminal(example from Lab1 Write-up, all credit goes to its rightful owners):
 
+```
 Enter same passphrase again: 
 Your identification has been saved in /Users/<user-name>/.ssh/id_rsa.
 Your public key has been saved in /Users/<user-name>/.ssh/id_rsa.pub.
@@ -169,11 +181,11 @@ The key's randomart image is:
 
 ## 6. Optimizing Remote Running
 
-Even after you have saved the trouble of contiously entering password in order to log in, sometimes it just takes way too long to enter all sorts of commands too. *LUCKILY*, there are some short cuts for it! ;)
+Even after you have saved the trouble of contiously entering password in order to log in, sometimes it just takes way too long to enter all sorts of commands too. *LUCKILY*, there are some shortcuts for it! ;)
 
 * type multiple commands on the same line:
     
-    * e.g. *ssh cs15lsp22amz@ieng6.ucsd.edu* + *cat WhereAmI.java* are inputed into the same line. And it directly shows the file content.
+    * e.g. *ssh cs15lsp22amz@ieng6.ucsd.edu*  *cat WhereAmI.java* are inputed into the same line. And it directly shows the file content.
 
     ![Image](multiCommand.jpg)
 
