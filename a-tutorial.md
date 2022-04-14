@@ -225,7 +225,7 @@ Even after you have saved the trouble of contiously entering password in order t
 
 * pre-type some of commands that you will be using frequently in the terminal:
 
-    * then, use the *up arrow* key on your keyboard, so some of your frequent commands could appear as you tap on the up arrow key. So it could minimize times spent on typing command lines.
+    * then, use the *up arrow* key on your keyboard, so some of your frequent commands could appear as you tap  on the up arrow key. So it could minimize times spent on typing command lines.
 
 Yay! I believe we have reached the end of this little tutorial! It may not be much, but I hope it could be of some help to you!
 
