@@ -18,4 +18,4 @@ This is a tester that contains a image written in markdown format. Similar to th
 ![Image](hill.jpg)
 ```
 
-Thus making it an edge case. The program should not print what's within the parentheses, as it's not written strictly in the URL format. The code, if not successfully written, will likely to display an error message. 
+Thus making it an edge case. The program should not print what's within the parentheses, as it's not written strictly in the URL format. The code, if not successfully written, will likely to cause errors in terminal runtime. 
