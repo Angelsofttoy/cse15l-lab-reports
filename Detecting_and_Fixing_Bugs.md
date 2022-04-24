@@ -39,26 +39,30 @@ public class MarkdownParse {
 }
 ```
 
-Nevertheless, this only applies to tests that include the correct Markdown URL format. (...)
+Nevertheless, this only applies to tests that include the correct Markdown URL format. Thus edge cases such as incorrect URL format(*e.g. image link, missing brackets,etc.*) are not considered. Below are some of the edge cases, analysis of their symptoms and bugs, and how to fix them specifically. 
 
 ## **Edge Case #1**: Image in Markdown Format
 
 This is a tester that contains a image written in markdown format. Similar to the URL markdown format, they both have a pair middle brackets(*[ ]*), and a pair of parentheses followed afterwards(_**( )**_). Nevertheless, the image format has an exclaimation mark in front of the middle bracket:
 
-```
-![Image](hill.jpg)
-```
-Here's the link to the github file of this image tester: 
-
 [imageTester](https://github.com/Angelsofttoy/markdown-parser/commit/1ecc65669019dd79b5b21be89c6119f827dc83ab)
 
-Thus, with a similar yet essentially non-applicable format, this is making it being an edge case. The program **should not** print what's within the parentheses, as it's not written strictly in the URL format. The code, if not successfully written, will likely to cause _**symptoms**_ that are shown in terminal runtime. 
+```
+![Image](hill.jpg)
+``` 
+
+Thus, with a similar yet essentially non-applicable format, this is making it being an edge case. The program **should not** print what's within the parentheses, as it's not written strictly in the URL format. The code, if not successfully written, will likely to cause _**symptoms**_ of crashing terminal that throws an exception. 
 
 * **Symptom**: The program produced the wrong output of image filename as URL, when it should prin out a corresponding error message. 
 
 * **Bug**: The program _did not write_ a condition that handle this edge case.
 
-_**Analysis between Symptoms, Bugs, and Terminal Output:**_
+* _**Analysis between Symptoms, Bugs, and Terminal Output:**_
+
+* Fixed Code: 
+![fixedImage](imageFixed.jpg)
+
+
 
 ## **Edge Case #2**: Non-formatted URL
 
@@ -79,15 +83,19 @@ _**Analysis between Symptoms, Bugs, and Terminal Output:**_
 ## **Edge Case #3**: Partially Formatted URL
 These tester files below are URL that are only formatted partially correct, as they are either partially or compeletely missing middle brackets/parentheses:
 
-[tester5]()
+[noParenTester](https://github.com/Angelsofttoy/markdown-parser/blob/main/tester5.md)
 ```
 link1(https://something.com)
 link2(some-thing.html)
 ```
 
-[tester6]()
+[noMiddleTester](https://github.com/Angelsofttoy/markdown-parser/blob/main/tester6.md)
 ```
 [link1]https://something.com,[link1]https://something.com
 ```
+
+* Symptom: The program crashed and threw a __exception. 
+
+* Bug:
 
 _**Analysis between Symptoms, Bugs, and Terminal Output:**_
