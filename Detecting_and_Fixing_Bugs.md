@@ -113,14 +113,17 @@ This symptom was shown is because as below lines of the program searched for mid
 
 ```
     ......
+    //original lines of codes:
             int openBracket = markdown.indexOf("[", currentIndex);
            
     ......
 }
 ```
-
+**Fixed Codes**: 
+![openBracFixed](openBracketIF.jpg)
 
 ## **Edge Case #3**: Partially Formatted URL
+
 These tester files below are URL that are only formatted partially correct, as they are either partially or compeletely missing middle brackets/parentheses:
 
 [noParenTester](https://github.com/Angelsofttoy/markdown-parser/blob/main/tester5.md)
