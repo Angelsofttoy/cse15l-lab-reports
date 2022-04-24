@@ -12,6 +12,10 @@ Nevertheless, this only applies to tests that include the correct Markdown URL f
 
 ## 1. Edge Case #1: Image in Markdown Format
 
-This is a tester that contains a image written in markdown format. Similar to the URL markdown format, they both have a pair middle brackets(*[ ]*), and a pair of parentheses followed afterwards
+This is a tester that contains a image written in markdown format. Similar to the URL markdown format, they both have a pair middle brackets(*[ ]*), and a pair of parentheses followed afterwards(_**( )**_). Nevertheless, the image format has an exclaimation mark in front of the middle bracket:
+
 ```
+![Image](hill.jpg)
 ```
+
+Thus making it an edge case. The program should not print what's within the parentheses, as it's not written strictly in the URL format. The code, if not successfully written, will likely to display an error message. 
