@@ -48,8 +48,11 @@ This is a tester that contains a image written in markdown format. Similar to th
 ```
 ![Image](hill.jpg)
 ```
+Here's the link to the github file of this image tester: 
 
-Thus making it an edge case. The program should not print what's within the parentheses, as it's not written strictly in the URL format. The code, if not successfully written, will likely to cause _**symptoms**_ that are shown in terminal runtime. 
+[imageTester](https://github.com/Angelsofttoy/markdown-parser/commit/1ecc65669019dd79b5b21be89c6119f827dc83ab)
+
+Thus, with a similar yet essentially non-applicable format, this is making it being an edge case. The program **should not** print what's within the parentheses, as it's not written strictly in the URL format. The code, if not successfully written, will likely to cause _**symptoms**_ that are shown in terminal runtime. 
 
 * **Symptom**: The program produced the wrong output of image filename as URL, when it should prin out a corresponding error message. 
 
