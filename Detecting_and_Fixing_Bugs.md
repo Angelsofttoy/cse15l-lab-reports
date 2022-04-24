@@ -88,9 +88,9 @@ public class MarkdownParse {
 ## **Edge Case #2**: Non-formatted URL
 
 * **Fixed Code:**
+![badURLFixed](badUrlFixed.jpg)
 
-
-The tester file below is indeed a valid URL, however it's not a valid *Markdown* formatted URL:
+The code was added with another if condition to handle null middle bracket is due to the tester file below. Despite it's indeed a valid URL, however it's not a valid *Markdown* formatted URL:
 
 [badURLTester](https://github.com/Angelsofttoy/markdown-parser/blob/main/tester2.md)
 
@@ -99,14 +99,25 @@ https://docs.google.com/document/d/1MusPdu2aB27Avgn4HcfulWKXYCWYyslExS3XNQrzbjM/
 ```
 Ideally, the program should be able to handle this edge case and print out a corresponding error message, instead of showing errors in the terminal below which shows this program _**has not taken this edge case into consideration**_ and its functionality is bugged. 
 
+_**Symptoms, Bugs, and Terminal Output:**_
+
 * Symptom: The program crashed and threw an out of bound exception. 
 
 * Bug: The program did not write an if condition to handle this possible edge case.
 
-* **Terminal Output**: 
+* Terminal Output: 
 ![badURL](badURL.jpg)
 
-_**Analysis between Symptoms, Bugs, and Terminal Output:**_
+* **Analysis:**
+This symptom was shown is because as below lines of the program searched for middle brackets, since there are none so the index of "[", openBracket will be equal to the value of -1, thus leading to an out of bounds exception being thrown at the terminal output. This problem can be fixed by adding another if condition in the program codes as shown below. 
+
+```
+    ......
+            int openBracket = markdown.indexOf("[", currentIndex);
+           
+    ......
+}
+```
 
 
 ## **Edge Case #3**: Partially Formatted URL
