@@ -58,6 +58,8 @@ Thus, with a similar yet essentially non-applicable format, this is making it be
 
 * **Bug**: The program _did not write_ a condition that handle this edge case.
 
+_**Analysis between Symptoms, Bugs, and Terminal Output:**_
+
 ## **Edge Case #2**: Non-formatted URL
 
 The tester file below is indeed a valid URL, however it's not a valid *Markdown* formatt URL:
@@ -65,11 +67,13 @@ The tester file below is indeed a valid URL, however it's not a valid *Markdown*
 ```
 https://docs.google.com/document/d/1MusPdu2aB27Avgn4HcfulWKXYCWYyslExS3XNQrzbjM/edit
 ```
-Ideally, the program should be able to handle this edge case and print out a corresponding error message, instead of showing errors in the terminal which shows this program _**has not taken this edge case into consideratio**_ and its functionality is bugged. 
+Ideally, the program should be able to handle this edge case and print out a corresponding error message, instead of showing errors in the terminal which shows this program _**has not taken this edge case into consideration**_ and its functionality is bugged. 
 
 * Symptom: The program crashed and threw a __exception. 
 
 * Bug:
+
+_**Analysis between Symptoms, Bugs, and Terminal Output:**_
 
 
 ## **Edge Case #3**: Partially Formatted URL
@@ -85,3 +89,5 @@ link2(some-thing.html)
 ```
 [link1]https://something.com,[link1]https://something.com
 ```
+
+_**Analysis between Symptoms, Bugs, and Terminal Output:**_
