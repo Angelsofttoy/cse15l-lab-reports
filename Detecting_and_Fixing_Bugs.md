@@ -56,6 +56,8 @@ This change was being made due to a tester that _**contains a image written in m
 
 Thus, with a similar yet essentially non-applicable format, this is making it being an edge case. The program **should not** print what's within the parentheses, as it's not written strictly in the URL format. The code, if not successfully written, will likely to cause _**symptoms**_ of crashing terminal that throws an exception. 
 
+_**Symptoms, Bugs, and Terminal Output:**_
+
 * **Symptom**: The program produced the wrong output of image filename as URL, when it should prin out a corresponding error message. 
 
 * **Terminal Output**: 
@@ -63,7 +65,7 @@ Thus, with a similar yet essentially non-applicable format, this is making it be
 
 * **Bug**: The program _did not write_ a condition that handles this edge case.
 
-* _**Analysis between Symptoms, Bugs, and Terminal Output:**_:
+* **Analysis:**:
 The symptom, which is shown in the terminal output, captured the image format(filename.jpg) into the list when it shouldn't.
 This is because the involvement of exclaimation mark is not considered, as these few lines:
 ```
@@ -143,7 +145,7 @@ If handled correctly, the program should neither have symptoms of throwing an ex
 
 _**Symptoms, Bugs, and Terminal Output:**_
 
-* Symptom: The program crashed and threw an out of bounds exception, *again*! :(
+* Symptom: The program crashed and threw an out of bounds exception, *again*! :( In addition, it encountered an infinite loop situation. 
 
 * Bug: Did not properly consider/write all if conditions for the possiblity of other brackets/parentheses' idx are at -1. 
 
@@ -151,8 +153,11 @@ _**Symptoms, Bugs, and Terminal Output:**_
     1. No brackets: ![xBracket](noBracket.jpg)
     2. No parentheses: ![xParentheses](noParen.jpg)
 
-* Analysis: The first output, similarly, as the second edge case was easy to fix as it also threw an out of bounds exception. So all it needed is addition of another if condition. The second output, despite it entered an infinite loop, which is due to the following line of code. 
+* **Analysis**: The first output, similarly, as the second edge case was easy to fix as it also threw an out of bounds exception. So all it needed is addition of another if condition. The second output, despite it entered an infinite loop, which is due to the following line of code. 
 ```
 toReturn.add(markdown.substring(openParen + 1, closeParen));
 ```
 * As the openParen is equals to [-1(oepnParen idx) + 1 = 0], while then closeParen equals to -1, the code will repeatedly go through the tester file and trying to find the the char located at -1, which apparently, it doesn't exist, thus entering a loop. As complexing as the situation may seem, the problem could also be fixed by adding two if conditions to handle if *openParen* and *closeParen* ' indexes are at -1, like below: 
+![fixedIF](3fixedIF.jpg)
+
+*By here, I think we have reached the end of this lab report! Thank you so much for reading :)*
