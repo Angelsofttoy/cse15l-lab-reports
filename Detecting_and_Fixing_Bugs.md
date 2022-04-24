@@ -1,6 +1,6 @@
 # _**Detecting and Fixing Bugs**_
 
-In often times, as a programmer, we sometimes would assume our codes were completed solely based on the codes' successful compilation and being able to pass a very common,single test case. Nevertheless, **edge cases** (*cases that are really considered and tweaks between exception cases and normal cases*), are often not considered and they are potential threats to the complete functionality of a program and also may cause 
+In often times, as a programmer, we sometimes would assume our codes were completed solely based on the codes' successful compilation and being able to pass a very common,single test case. Nevertheless, **edge cases** (*cases that aren't really considered and tweaks between exception cases and normal cases*), are often not considered and they are potential threats to the complete functionality of a program and also may cause 
 
 For instance, we have written a program of codes that help us to extract exact URL from a piece of URL written in Markdown format.
 
@@ -53,7 +53,7 @@ Thus making it an edge case. The program should not print what's within the pare
 
 * **Symptom**: The program produced the wrong output of image filename as URL, when it should prin out a corresponding error message. 
 
-* **Bug**: The program _did not written_ a condition that handle this edge case.
+* **Bug**: The program _did not write_ a condition that handle this edge case.
 
 ## **Edge Case #2**: Non-formatted URL
 
@@ -70,4 +70,13 @@ Ideally, the program should be able to handle this edge case and print out a cor
 
 
 ## **Edge Case #3**: Partially Formatted URL
+These tester files below are URL that are only formatted partially correct, as they are either partially or compeletely missing middle brackets/parentheses:
 
+```
+link1(https://something.com)
+link2(some-thing.html)
+```
+
+```
+[link1]https://something.com,[link1]https://something.com
+```
