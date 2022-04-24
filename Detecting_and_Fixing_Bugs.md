@@ -87,6 +87,9 @@ public class MarkdownParse {
 
 ## **Edge Case #2**: Non-formatted URL
 
+* **Fixed Code:**
+
+
 The tester file below is indeed a valid URL, however it's not a valid *Markdown* formatted URL:
 
 [badURLTester](https://github.com/Angelsofttoy/markdown-parser/blob/main/tester2.md)
@@ -96,9 +99,12 @@ https://docs.google.com/document/d/1MusPdu2aB27Avgn4HcfulWKXYCWYyslExS3XNQrzbjM/
 ```
 Ideally, the program should be able to handle this edge case and print out a corresponding error message, instead of showing errors in the terminal below which shows this program _**has not taken this edge case into consideration**_ and its functionality is bugged. 
 
-* Symptom: The program crashed and threw a __exception. 
+* Symptom: The program crashed and threw an out of bound exception. 
 
-* Bug:
+* Bug: The program did not write an if condition to handle this possible edge case.
+
+* **Terminal Output**: 
+![badURL](badURL.jpg)
 
 _**Analysis between Symptoms, Bugs, and Terminal Output:**_
 
