@@ -43,7 +43,10 @@ Nevertheless, this only applies to tests that include the correct Markdown URL f
 
 ## **Edge Case #1**: Image in Markdown Format
 
-This is a tester that contains a image written in markdown format. Similar to the URL markdown format, they both have a pair middle brackets(*[ ]*), and a pair of parentheses followed afterwards(_**( )**_). Nevertheless, the image format has an exclaimation mark in front of the middle bracket:
+* **Fixed Code**: 
+![fixedImage](imageFixed.jpg)
+
+This change was being made due to a tester that _**contains a image written in markdown format**_. Similar to the URL markdown format, they both have a pair middle brackets(*[ ]*), and a pair of parentheses followed afterwards(_**( )**_). Nevertheless, the image format has an exclaimation mark in front of the middle bracket:
 
 [imageTester](https://github.com/Angelsofttoy/markdown-parser/commit/1ecc65669019dd79b5b21be89c6119f827dc83ab)
 
@@ -58,10 +61,6 @@ Thus, with a similar yet essentially non-applicable format, this is making it be
 * **Bug**: The program _did not write_ a condition that handle this edge case.
 
 * _**Analysis between Symptoms, Bugs, and Terminal Output:**_
-
-* Fixed Code: 
-![fixedImage](imageFixed.jpg)
-
 
 
 ## **Edge Case #2**: Non-formatted URL
