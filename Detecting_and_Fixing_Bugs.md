@@ -58,10 +58,32 @@ Thus, with a similar yet essentially non-applicable format, this is making it be
 
 * **Symptom**: The program produced the wrong output of image filename as URL, when it should prin out a corresponding error message. 
 
-* **Bug**: The program _did not write_ a condition that handle this edge case.
+* **Terminal Output**: 
+![faultyIMG](faultyIMG.jpg)
 
-* _**Analysis between Symptoms, Bugs, and Terminal Output:**_
+* **Bug**: The program _did not write_ a condition that handles this edge case.
 
+* _**Analysis between Symptoms, Bugs, and Terminal Output:**_:
+The symptom, which is shown in the terminal output, captured the image format(filename.jpg) into the list when it shouldn't.
+This is because the involvement of exclaimation mark is not considered, as these few lines:
+```
+public class MarkdownParse {
+
+    public static ArrayList<String> getLinks(String markdown) {
+        ......
+        while(currentIndex < markdown.length()) {
+            int openBracket = markdown.indexOf("[", currentIndex);
+            int closeBracket = markdown.indexOf("]", openBracket);
+            int openParen = markdown.indexOf("(", closeBracket);
+            int closeParen = markdown.indexOf(")", openParen);
+            toReturn.add(markdown.substring(openParen + 1, closeParen));
+            currentIndex = closeParen + 1;
+        ......
+}
+```
+...only cares if they have found the indexes of open/close bracket, and open/close parentheses to account it for an valid URL format. The image URL have all these elements thus making the program falsely consider it as a valid input, and produced the aforementioned symptom as shown in the terminal output, filename.jpg was captured. Nevertheless, as we have added these few lines within the while loop, the edge case is able to be successfully handled:
+
+![addedImageLines](addImgLines.jpg)
 
 ## **Edge Case #2**: Non-formatted URL
 
