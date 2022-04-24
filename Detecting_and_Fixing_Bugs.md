@@ -72,11 +72,13 @@ Ideally, the program should be able to handle this edge case and print out a cor
 ## **Edge Case #3**: Partially Formatted URL
 These tester files below are URL that are only formatted partially correct, as they are either partially or compeletely missing middle brackets/parentheses:
 
+[tester5]()
 ```
 link1(https://something.com)
 link2(some-thing.html)
 ```
 
+[tester6]()
 ```
 [link1]https://something.com,[link1]https://something.com
 ```
