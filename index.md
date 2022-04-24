@@ -5,9 +5,9 @@
 *though you may not know*
 
 but yesterday I have seen you 
-in my dreams 
+in my dreams, 
 
-[Link](https://www.youtube.com/watch?v=btmjDyff6E8)
+[in seas.](https://www.youtube.com/watch?v=btmjDyff6E8)
 
 > *like sea, you always remind me of blueful happy memories :)*
 
@@ -33,6 +33,6 @@ I will see u, in our dreams <3. Or:
 
 *our emotions will be present in anywhere, anytime.*
 
-[Lab Report 1](lab-report-1-week-2.html)
-
 [Lab Report 1](https://Angelsofttoy.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+
+[Lab Report 2](https://Angelsofttoy.github.io/cse15l-lab-reports/lab-report-1-week-2.html)

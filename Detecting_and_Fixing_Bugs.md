@@ -124,7 +124,10 @@ This symptom was shown is because as below lines of the program searched for mid
 
 ## **Edge Case #3**: Partially Formatted URL
 
-These tester files below are URL that are only formatted partially correct, as they are either partially or compeletely missing middle brackets/parentheses:
+* **Fixed Code ScreenShot:**
+![fixed](xUrlFormat.jpg)
+
+These if conditions were added due to tester files below that include URL which are only formatted correct partially, as they are either partially or compeletely missing middle brackets/parentheses:
 
 [noParenTester](https://github.com/Angelsofttoy/markdown-parser/blob/main/tester5.md)
 ```
@@ -136,9 +139,20 @@ link2(some-thing.html)
 ```
 [link1]https://something.com,[link1]https://something.com
 ```
+If handled correctly, the program should neither have symptoms of throwing an exception in the terminal or capturing these two URL into the list. 
 
-* Symptom: The program crashed and threw a __exception. 
+_**Symptoms, Bugs, and Terminal Output:**_
 
-* Bug:
+* Symptom: The program crashed and threw an out of bounds exception, *again*! :(
 
-_**Analysis between Symptoms, Bugs, and Terminal Output:**_
+* Bug: Did not properly consider/write all if conditions for the possiblity of other brackets/parentheses' idx are at -1. 
+
+* Terminal Output:
+    1. No brackets: ![xBracket](noBracket.jpg)
+    2. No parentheses: ![xParentheses](noParen.jpg)
+
+* Analysis: The first output, similarly, as the second edge case was easy to fix as it also threw an out of bounds exception. So all it needed is addition of another if condition. The second output, despite it entered an infinite loop, which is due to the following line of code. 
+```
+toReturn.add(markdown.substring(openParen + 1, closeParen));
+```
+* As the openParen is equals to [-1(oepnParen idx) + 1 = 0], while then closeParen equals to -1, the code will repeatedly go through the tester file and trying to find the the char located at -1, which apparently, it doesn't exist, thus entering a loop. As complexing as the situation may seem, the problem could also be fixed by adding two if conditions to handle if *openParen* and *closeParen* ' indexes are at -1, like below: 
