@@ -9,3 +9,10 @@ And as we could see below the file listed within this directory are all being co
 
 ![image](./lab3/3-1.jpg)
 ![image](./lab3/3-2.jpg)
+
+It's pretty easy to run this in our ieng6 account after we have copied this markdown-paraser repository: 
+
+![image](./lab3/3-3.jpg)
+
+As we could see, all of the test are sucessfully being ran on ieng6 server. 
+
