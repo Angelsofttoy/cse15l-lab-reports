@@ -1,5 +1,28 @@
 # _**Lab Report 3**_
 
+## **1. Streamlining ssh Configuration**
+For here after I logged in onto ieng6 server I changed the directory to ssh and then just use:
+
+```
+$ vim config
+```
+-- to edit the configuration file as below:
+
+![image](./lab3/1-1.jpg)
+
+
+After this I pressed esc and the entered :wq to save the changes and exit the editor. 
+
+And now! The logging process is so much simpler! Just entering:
+
+```
+$ ssh ieng6
+```
+
+-- would in fact be sufficient as shown below: 
+
+![image](./lab3/1-2.jpg)
+
 ## **2. Setup Github Access from ieng6**
 
 Below is the SSH keys I've stored in the github setting:
@@ -21,6 +44,8 @@ Below is the link that stored relevant data about this commit with the message "
 ![image](./lab3/2-5.jpg)
 
 As we could see, I deleted an integer field in getLinks method, and the editor of the MarkdownParse.java no longer has that line:
+
+![image](./lab3/2-4.jpg)
 
 ## **3. Copy whole directories with scp -r**
 For copying the whole markdown directory to one's ieng6 account, we simply need to put this command in the terminal:
