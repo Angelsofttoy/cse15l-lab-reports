@@ -23,6 +23,10 @@ $ ssh ieng6
 
 ![image](./lab3/1-2.jpg)
 
+After this, I scp an image over to the remote ieng6 server through the *ieng6* alias I chose:
+
+![image](./lab3/1-3.jpg)
+
 ## **2. Setup Github Access from ieng6**
 
 Below is the SSH keys I've stored in the github setting:
