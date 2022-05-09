@@ -13,7 +13,7 @@ $ vim config
 
 After this I pressed esc and the entered :wq to save the changes and exit the editor. 
 
-And now! The logging process is so much simpler! Just entering:
+And now! The logging process is so much simpler!:) Just entering:
 
 ```
 $ ssh ieng6
