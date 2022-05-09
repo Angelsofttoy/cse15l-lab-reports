@@ -1,4 +1,4 @@
-# _**Faster Runner**_
+# _**Lab Report 3**_
 
 ## **2. Setup Github Access from ieng6**
 
@@ -17,6 +17,10 @@ Following this, I used several commands in the terminal to remotely delete a lin
 Below is the link that stored relevant data about this commit with the message "edit":
 
 [! link to github-commit !](https://github.com/Angelsofttoy/markdown-parser/commit/f9d9f81a540ead9d9e8efc3b98e03db8eb129900)
+
+![image](./lab3/2-5.jpg)
+
+As we could see, I deleted an integer field in getLinks method, and the editor of the MarkdownParse.java no longer has that line:
 
 ## **3. Copy whole directories with scp -r**
 For copying the whole markdown directory to one's ieng6 account, we simply need to put this command in the terminal:
