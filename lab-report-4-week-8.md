@@ -231,9 +231,10 @@ And there's still some more text after that.
 ```
 
 Result of reviewed test output:
-
 ![otherSnippet3](./lab4/otherSnippet3.jpg)
+
 - _Actual Result:_
+
 ```
     [https://www.twitter.com
 )
@@ -251,6 +252,7 @@ And there's still some more text after that.
 [this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/
 
 ]
+
 ```
 
 - **_Reflection:_** The result was exceedingly and unnecessarily long because the case of having blanks spaces and multiple line breaks(which also constitued as blanks spaces are not considered, thus not being to handle the invalid cases a closeParen seperated by tabs and blank lines lead to a very long result.)
