@@ -9,6 +9,7 @@
 ## **1.Snippet 1**
 **snippet content:**
 ***
+ ```
 [a link](url.com)
 
 [another link](`google.com)`
@@ -16,6 +17,7 @@
 [`cod[e`](google.com)
 
 [`code]`](ucsd.edu)
+ ```
 ***
 - **_expected list of valid links:_**
 ```
@@ -33,6 +35,8 @@
         assertEquals(List.of("`google.com","google.com","ucsd.edu"), links);
     }
 ```
+![snippetTest1](./lab4/snippetTest1.jpg)
+
 The result of how my actual tester output list of links turned out is shown as below:
 
 ![mySnippet1](./lab4/mySnippet1.jpg)
@@ -73,12 +77,13 @@ By these codes I think it can handle most of the conditions where backticks are 
 ## **2.Snippet 2**
 **snippet content:**
 ***
+ ```
 [a [nested link](a.com)](b.com)
 
 [a nested parenthesized url](a.com(()))
 
 [some escaped \[ brackets \]](example.com)
-
+ ```
 ***
 - **_expected list of valid links:_**
 ```
@@ -97,6 +102,7 @@ By these codes I think it can handle most of the conditions where backticks are 
     }
 ```
 
+![snippetTest2](./lab4/snippetTest2.jpg)
 
 The result of how my actual tester output list of links turned out is shown as below:
 
@@ -137,7 +143,9 @@ Since the condition turned out to be much more complicate(maybe I'm overthinking
 
 ## **3.Snippet 3**
 **snippet content:**
+
 ***
+ ```
 [this title text is really long and takes up more than 
 one line
 
@@ -162,7 +170,9 @@ And there's still some more text after that.
 )
 
 And then there's more text
+ ```
 ***
+
 Although there are three blue highlights in the snippet 3 above, but the only valid one is this part:
 
  ```
@@ -189,6 +199,7 @@ https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule
     }
 ```
 
+![snippetTest3](./lab4/snippetTest3.jpg)
 
 The result of how my actual tester output list of links turned out is shown as below:
 
