@@ -41,13 +41,18 @@ The result of how my actual tester output list of links turned out is shown as b
 
 ![mySnippet1](./lab4/mySnippet1.jpg)
 
+- **_Actual Result:_**
+```
+[url.com, `google.com, google.com]
+```
+
 Result of reviewed test output:
 
 ![otherSnippet1](./lab4/otherSnippet1.jpg)
 
 - **_Actual Result:_**
 ```
-"[url.com, `google.com, google.com]"
+[ url.com, `oogle.com, [`code[e`](google.com ]
 ```
 
 - **_Reflection:_** In this case the tester case is not passed, because the pair of backticks formats "[a link" as `[a link`(an inline code), before the link markdown format, so url.com should not be in the expected list, while my MarkdownParse.java did not consider backticks, or to say I merely consider the test cases for having an exclaimation mark before the middle bracket. 
