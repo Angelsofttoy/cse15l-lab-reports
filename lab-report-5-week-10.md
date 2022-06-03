@@ -1,0 +1,23 @@
+# _**Tests Comparision**_
+
+1. **How you found the tests with different results (Did you use vimdiff on the results of running a bash for loop? Did you search through manually? Did you use some other programmatic idea?)**
+
+A: I found the tests with different results by using vimdiff command, which shows the test results of each test side by side in the terminal. I used this specific command below:
+```
+$ vimdiff my-markdown-parser/results.txt cse15lsp22-markdown-parser/results.txt
+```
+Then I just scroll down to find any reuslt discrepencies and took screenshots. 
+
+***
+
+**Link to tests' content:**
+
+[test 403's content](https://github.com/Angelsofttoy/markdown-parser/blob/main/test-files/403.md?plain=1)
+
+[test 516's content](https://github.com/Angelsofttoy/markdown-parser/blob/main/test-files/516.md?plain=1)
+
+***
+
+![Image](./lab5/5-1.jpg)
+
+![Image](./lab5/5-2.jpg)
