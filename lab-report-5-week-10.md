@@ -14,10 +14,23 @@ Then I just scroll down to find any reuslt discrepencies and took screenshots.
 
 [test 403's content](https://github.com/Angelsofttoy/markdown-parser/blob/main/test-files/403.md?plain=1)
 
+![Image](./lab5/5-1-2.jpg)
+
 [test 516's content](https://github.com/Angelsofttoy/markdown-parser/blob/main/test-files/516.md?plain=1)
 
 ***
 
+## **1. test 403**
 ![Image](./lab5/5-1.jpg)
+For this one, the implementation of the TA's markdownParse.java is the correct implemetntaion. Because as I put it in VS code to see if the text portion within the middle brakcet is highlighted, it is indeed highlighted as shown by the picture below:
+
+![Image](./lab5/5-1-3.jpg)
+
+So in this case my implementation 
+
+***
+
 
 ![Image](./lab5/5-2.jpg)
+
+*foo [bar](/url)*
