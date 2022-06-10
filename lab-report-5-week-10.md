@@ -6,7 +6,7 @@ A: I found the tests with different results by using vimdiff command, which show
 ```
 $ vimdiff my-markdown-parser/results.txt cse15lsp22-markdown-parser/results.txt
 ```
-Then I just scroll down to find any reuslt discrepencies and took screenshots. 
+Then I just scrolled down to find any reuslt discrepencies and took screenshots. 
 
 ***
 
@@ -26,7 +26,28 @@ For this one, the implementation of the TA's markdownParse.java is the correct i
 
 ![Image](./lab5/5-1-3.jpg)
 
-So in this case my implementation 
+**In summary:**
+
+* Expected Output:
+```
+[/url]
+```
+* Actual Output(of my implementaion):
+```
+[]
+```
+* Actual Output(of TAs' implementation):
+```
+[/url]
+```
+
+So in this case my implementation was wrong, as the codes identified the text as an invalid URL markdown format, while the passed in text indeed contains valid URL format. 
+
+**Analysis for incorrect implementation:** 
+
+A: For this test, my implementaion had the incorrect list of URL as the result, which is an empty middle bracket when it should contain the aforementioned URL link. I think this is due to this segment of my code:
+```
+```
 
 ***
 
