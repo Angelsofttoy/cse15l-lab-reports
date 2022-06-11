@@ -72,7 +72,28 @@ This segment of code was initially implemented for testing whether the web url w
 
 [test 510's content](https://github.com/Angelsofttoy/markdown-parser/blob/main/test-files/510.md?plain=1)
 
-For this test case, the implementation of my MarkdownParse.java was the correct one, for it considered the case that if the symbol at the next index of closing middle bracket, is not a paraenthesis, then this would make the markdown url to be an invalid one. Indeed, in this test case, there's a blank space between the closing middle bracket and the opening paranthesis which were detected by the following implementation within my codes:
+![Image](./lab5/5-6-3.jpg)
+
+For this test case, the implementation of my MarkdownParse.java was the correct one, for it considered the case that if the symbol at the next index of closing middle bracket, is not a paraenthesis, then this would make the markdown url to be an invalid one. 
+
+![Image](./lab5/5-6-4.jpg)
+
+**In summary:**
+
+* Expected Output:
+```
+[]
+```
+* Actual Output(of my implementaion):
+```
+[]
+```
+* Actual Output(of TAs' implementation):
+```
+[/uri]
+```
+
+Indeed, in this test case, there's a blank space between the closing middle bracket and the opening paranthesis which were detected by the following implementation within my codes:
 
 ![Image](./lab5/5-6-1.jpg)
 ```
@@ -88,7 +109,5 @@ Instead, this invalid url markdown wasn't able to be detected in lab9's Markdown
 ![Image](./lab5/5-6-2.jpg)
 
 The reason why this is incorrect because potentialLink is always considering the blank space after the opening parenthesis and the slash sign(which is used for canceling the oepning parenthesis). But the fact is it failed to consider situations where the blank space is before the opening parenthesis which could also lead to an invalid URL. Thus this lab9 implementation wasn't able to distinguish the passed-in text as an invalid URL markdown format.
-
-*foo [bar](/url)*
 
 [link] (/uri)
