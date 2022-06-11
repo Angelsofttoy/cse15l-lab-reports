@@ -42,7 +42,7 @@ So in this case my implementation was wrong, as the codes identified the text as
 
 **Analysis for incorrect implementation:** 
 
-A: For this test, my implementaion had the incorrect list of URL as the result, which is an empty middle bracket when it should contain the aforementioned URL link. I think this is due to this segment of my code:
+A: For this test, my implementaion had the incorrect list of URL as the result, which is an empty list when it should contain the aforementioned URL link --> [/url]. I think this result happended due to this segment of my codes:
 ![Image](./lab5/5-1-4.jpg)
 
 ```
