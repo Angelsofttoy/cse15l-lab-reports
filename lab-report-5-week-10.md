@@ -6,7 +6,8 @@ A: I found the tests with different results by using vimdiff command, which show
 ```
 $ vimdiff my-markdown-parser/results.txt cse15lsp22-markdown-parser/results.txt
 ```
-Then I just scrolled down to find any reuslt discrepencies and took screenshots. 
+Then I just scrolled down to find any result discrepencies and took screenshots. 
+
 ***
 
 ## **1. Test 403**
