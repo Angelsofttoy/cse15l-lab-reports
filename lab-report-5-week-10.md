@@ -62,7 +62,7 @@ if(!(openParen < urlDot) && !(urlDot < closeParen) || urlDot == -1){
     break;
 }
 ```
-This segment of code was initially implemented for testing whether the web url within the parenthesis is a valid url with dots(since that seemed to be the usual case). Nevertheless, I wasn't able to consider the fact that no matter the text contained within the parenthesis has a valid dotted url or not, as long as the markdown format is correct, even if there is only a number within the parenthesis, the url will still be valid on a page with rendered markdown. Thus, if the condition listed above is deleted, then my Markdown.java would have been able to produce similar result as the TA implementation. 
+This segment of code was initially implemented for testing whether the web url within the parenthesis is a valid url with dots(since that seemed to be the usual case). Nevertheless, I wasn't able to consider the fact that no matter the text contained within the parenthesis has a valid dotted url or not, as long as the markdown format is correct, even if there is only a number within the parenthesis, the url will still be valid on a page with rendered markdown. Thus, if the condition listed above is deleted, then my Markdown.java would have been able to produce a similar result as the TA implementation. 
 
 ***
 
