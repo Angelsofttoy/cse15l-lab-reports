@@ -109,6 +109,6 @@ Instead, this invalid url markdown wasn't able to be detected in lab9's Markdown
 
 ![Image](./lab5/5-6-2.jpg)
 
-The reason why this is incorrect because potentialLink is always considering the blank space after the opening parenthesis and the slash sign(which is used for canceling the oepning parenthesis). But the fact is it failed to consider situations where the blank space is before the opening parenthesis which could also lead to an invalid URL. Thus this lab9 implementation wasn't able to distinguish the passed-in text as an invalid URL markdown format. If there could be an additional if condition in the getLink method to exclude links that have spaced between closing middle bracket and open parenthesis, I think it test 510.md would then be able to pass. 
+The reason why this is incorrect because potentialLink is always considering the blank space after the opening parenthesis and the slash sign(which is used for canceling the oepning parenthesis). But the fact is it failed to consider situations where the blank space is before the opening parenthesis which could also lead to an invalid URL. Thus this lab9 implementation wasn't able to distinguish the passed-in text as an invalid URL markdown format. If there could be an additional if condition in the getLink method to exclude links that have spaced between closing middle bracket and open parenthesis, I think test 510 would then be able to pass. 
 
 （Thanks for grading :)! Have a nice summer:)!
