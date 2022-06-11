@@ -70,8 +70,20 @@ This segment of code was initially implemented for testing whether the web url w
 ## **2. test 510**
 ![Image](./lab5/5-6.jpg)
 For this test case, the implementation of my MarkdownParse.java was the correct one, for it considered the case that if the symbol at the next index of closing middle bracket, is not a paraenthesis, then this would make the markdown url to be an invalid one. Indeed, in this test case, there's a blank space between the closing middle bracket and the opening paranthesis which were detected by the following implementation within my codes:
+
+![Image](./lab5/5-6-1.jpg)
 ```
+if(openParen == -1 || openParen!= closeBracket + 1){
+    System.out.println("Error: Invalid link format openParen!");
+    break;
+}
 ```
+This invalid url markdown wasn't able to be detected in lab9's MarkdownParse.java was because it merely considered how to read in multiple links that have matching paraenthesis into the list, and also because of a slightly unsuitable if condition as we could see below：
+
+![Image](./lab5/5-6-2.jpg)
+
+The reason why this is incorrect because potentialLink is always considering the blank space after the opening parenthesis and the slash sign(which is used for canceling the oepning parenthesis). But the fact is it failed to consider situations where 
+
 *foo [bar](/url)*
 
 [link] (/uri)
