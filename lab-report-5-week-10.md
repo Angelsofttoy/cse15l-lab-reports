@@ -16,7 +16,7 @@ Then I just scrolled down to find any reuslt discrepencies and took screenshots.
 
 ![Image](./lab5/5-1-2.jpg)
 
-[test 516's content](https://github.com/Angelsofttoy/markdown-parser/blob/main/test-files/516.md?plain=1)
+[test 510's content](https://github.com/Angelsofttoy/markdown-parser/blob/main/test-files/510.md?plain=1)
 
 ***
 
@@ -67,7 +67,9 @@ if(!(openParen < urlDot) && !(urlDot < closeParen) || urlDot == -1){
 This segment of code was initially implemented for testing whether the web url within the parenthesis is a valid url with dots(since that seemed to be the usual case). Nevertheless, I wasn't able to consider the fact that no matter the text contained within the parenthesis is a valid dotted url or not, as long as the markdown format is correct, even if there is only a number within the parenthesis, the url will still be valid on a page with rendered markdown. Thus, if the condition listed above is deleted, then my Markdown.java would have been able to produce similar result as the TA implementation. 
 
 ***
-## **2. test 577**
-![Image](./lab5/5-3.jpg)
-
+## **2. test 510**
+![Image](./lab5/5-6.jpg)
+For this test 
 *foo [bar](/url)*
+
+[link] (/uri)
