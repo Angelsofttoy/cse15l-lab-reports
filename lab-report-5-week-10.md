@@ -63,7 +63,7 @@ if(!(openParen < urlDot) && !(urlDot < closeParen) || urlDot == -1){
     break;
 }
 ```
-This segment of code was initially implemented for testing whether the web url within the parenthesis is a valid url with dots(since that seemed to be the usual case). Nevertheless, I wasn't able to consider the fact that no matter the text contained within the parenthesis has a valid dotted url or not, as long as the markdown format is correct, even if there is only a number within the parenthesis, the url will still be valid on a page with rendered markdown. Thus, if the condition listed above is deleted, then my Markdown.java would have been able to produce a similar result as the TA implementation. 
+This segment of code was initially implemented for testing whether the web url within the parenthesis is a valid url with dots(since that seemed to be the usual case). Nevertheless, I wasn't able to consider the fact that no matter the text contained within the parenthesis has a valid dotted url or not, as long as the markdown format is correct, even if there is only a number within the parenthesis, the url will still be valid on a page with rendered markdown. Thus, if the condition listed above is deleted, then my Markdown.java would have been able to produce a similar result as the TA implementation. But in addition to this, I may also need to modify my code implementation to make sure that it would disregard the * sign while producing rendered markdown for URL links, as being italicized doesn't affect the validity of a correct URL link format. 
 
 ***
 
@@ -96,7 +96,7 @@ For this test case, the implementation of my MarkdownParse.java was the correct 
 [/uri]
 ```
 
-Indeed, in this test case, there's a blank space between the closing middle bracket and the opening paranthesis which were detected by the following implementation within my codes:
+Indeed, in this test case, there's a blank space between the closing middle bracket and the opening paranthesis which were detected by the following implementation within my codes, thus this URL link was not put into the final list:
 
 ![Image](./lab5/5-6-1.jpg)
 ```
@@ -111,6 +111,6 @@ Instead, this invalid url markdown wasn't able to be detected in lab9's Markdown
 
 ![Image](./lab5/5-6-2.jpg)
 
-The reason why this is incorrect because potentialLink is always considering the blank space after the opening parenthesis and the slash sign(which is used for canceling the oepning parenthesis). But the fact is it failed to consider situations where the blank space is before the opening parenthesis which could also lead to an invalid URL. Thus this Lab 9 implementation wasn't able to distinguish the passed-in text as an invalid URL markdown format. If there could be an additional if condition in the getLink method to exclude links that have spaced between closing middle bracket and open parenthesis, I think test 510 would then be able to pass. 
+The reason why this is incorrect because potentialLink is always considering the blank space after the opening parenthesis and the slash sign(which is used for canceling the oepning parenthesis). But the fact is it failed to consider situations where the blank space is before the opening parenthesis which could also lead to an invalid URL. Thus this Lab 9 implementation wasn't able to distinguish the passed-in text as an invalid URL markdown format. If there could be an additional if condition in the getLink method to exclude links that have spaced between closing middle bracket and open parenthesis, I think test 510 would then be able to pass. But this implementation requires some thoughtful consideration regarding how to identify single or sometimes multiple blank spaces between the middle bracket and the open parenthesis.  
 
 （Thanks for grading :)! Have a nice summer:)!
